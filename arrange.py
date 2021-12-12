@@ -50,7 +50,7 @@ def get_house_from_player(player):
 
 def get_cg_from_player(player):
     if (player.cgnumber == ""):
-        return str(randint(60,200)) #Nursing has no CGs, thus we do not want to conflict with Medicine CGs 1-50
+        return str(randint(60,200)) #Nursing has no CGs, thus we do not want to conflict with Medicine CGs 1-60
     else:
         return player.cgnumber
 
