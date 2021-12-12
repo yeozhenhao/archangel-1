@@ -42,35 +42,6 @@ that were not matched and thus not in the *"0 - xxxxxxxxx"* .csv output file. Yo
 For each row (player) in the .csv file, the Angel is the player row above, and the Mortal is the player row below.\
 Essentially, Angels & Mortals is a game where the matching can form a closed one-way loop.
 ####
-![](botPics/transpose1.png)\
-***Initial terminal output after running transpose_for_bot.py***\
-First, rename the *0 - xxxxxxxxx.csv* into **1.csv**\
-Then, simply run *transpose_for_bot.py*.\
-The terminal should initially print a *pandas dataframe* of the 1.csv file.
-This dataframe will be manipulated to get the final output.
-
-####
-![](botPics/transpose2.png)\
-***2nd terminal output after 1st manipulation of dataframe***\
-Column names of Column 2 & 3 are changed to *"Angel"* & *"Mortal"* respectively as printed on the terminal.\
-Also, data of Column 1 is copied onto Columns 2 & 3.
-####
-![](botPics/transpose3.png)\
-***3rd terminal output after 2nd manipulation of dataframe***\
-Data in Column 2 is shifted down by 1 row.\
-Data in Column 3 is shifted up by 1 row.\
-We will deal with NaN values next.
-####
-![](botPics/transpose4.png)\
-***Final terminal output after last manipulation of dataframe***\
-NaN value in Column 2 is replaced with the last row data in Column 1.\
-NaN value in Column 3 is replaced with the first row data in Column 1.
-####
-![](botPics/transposeoutput.png)\
-***Final Players List.csv after transposing of data with transpose_for_bot.py script***\
-This Final Players List.csv can be directly used into [yeozhenhao's Angels & Mortals Dual Bots](https://github.com/yeozhenhao/Angels_Mortals_bot)
-to start playing an Angels & Mortals game on Telegram!
-####
 
 ## Accreditation
 Special thanks to **Sriram Sami** for his idea of using Hamilton algorithm with the `networkx` python module.
