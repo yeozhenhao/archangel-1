@@ -31,6 +31,8 @@ DISPLAY_GRAPH = True
 
 # Changing this value changes how much we care about the houses of players being the same
 # If 1 - we don't care, and house de-conflicting is ignored. 0 means we won't allow any players of the same house to be matched.
+MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT = 1
+
 RELAX_GENDERPREF_REQUIREMENT_PERCENTAGE = 0.35
 
 RELAX_NO_SAME_HOUSE_REQUIREMENT_PERCENTAGE = 0.35
@@ -197,7 +199,7 @@ def angel_mortal_arrange(player_list):
         full_cycle = hamilton(G) #get_one_full_cycle_from_graph(G)
         #full_cycle = get_hamiltonian_path_from_graph(G)
         # Draw the full cycle if it exists
-        if full_cycle is not None and (G.number_of_nodes() >= (0.8 * len(player_list))): #do not print CSV if number of nodes is < 80% of participants
+        if full_cycle is not None and (G.number_of_nodes() >= (MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT * len(player_list))): #do not print CSV if number of nodes is < 80% of participants
             G_with_full_cycle = convert_full_cycle_to_graph(full_cycle)
             draw_graph(G_with_full_cycle)
             list_of_player_chains.append(full_cycle)
