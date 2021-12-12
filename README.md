@@ -28,7 +28,7 @@ You should close this window again, and there will be a couple more pop-up windo
 you should close again but the bot should export out a *"0 - xxxxxxxxx"* .csv file soon. 
 ####
 ![](botPics/match3.png)\
-***End of a angel.py script that has successfully matched >{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}} of players in the input playerlist.csv***\
+***End of a angel.py script that has successfully matched **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of players in the input playerlist.csv***\
 After no more pop-up windows are shown & angel.py script has terminated, the terminal 
 should ideally indicate to you that CSV is printed, and also tell you the list of players (technically a *Python dictionary*) 
 that were not matched and thus not in the *"0 - xxxxxxxxx"* .csv output file. You will need to match them manually.
@@ -78,7 +78,7 @@ The matching for Angels & Mortals can be done with a Hamiltonian-cycle based app
 - ensures matches are NOT from the same Clinical Group (CG)
 - ensures matches are NOT from the same House\
 *Note: The % leniency in matching for the aforementioned criteria can be set in **arrange.py***
-- only if >{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}} of the entire player base has a suitable match, then a "Final Players List" .csv output will be generated
+- only if **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of the entire player base has a suitable match, then a "Final Players List" .csv output will be generated
 
 ## How to use the Matching Algorithm
 1. Clone the repo
