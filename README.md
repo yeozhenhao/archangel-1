@@ -33,7 +33,7 @@ After no more pop-up windows are shown & angel.py script has terminated, the ter
 should ideally indicate to you that CSV is printed, and also tell you the list of players (technically a *Python dictionary*) 
 that were not matched and thus not in the *"0 - xxxxxxxxx"* .csv output file. You will need to match them manually.
 ####
-*Note: the *"0 - xxxxxxxxx"* .csv output file will not be created if the **angel.py** script is unable to match >80% of players in the input playerlist.csv.*
+*Note: the *"0 - xxxxxxxxx"* .csv output file will not be created if the **angel.py** script is unable to match **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of players in the input playerlist.csv.*
 ####
 ![](botPics/matchoutput.png)\
 ***"0 - xxxxxxxxx" .csv output file from a successful matching by angel.py script***\
@@ -52,7 +52,7 @@ Please check out his website if you want to learn how it works in Angels & Morta
 - an important one-line replacement of a deprecated `networkx` command in **arrange.py** so the algorithm works with the latest `networkx==2.6.3`.
 ####
 - **NEW .csv output functions:**\
-1: Output .csv only prints when matching algorithm successfully matches >80% of players in the inital .csv input file.\
+1: Output .csv only prints when matching algorithm successfully matches **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of players in the inital .csv input file.\
 2: Also, log file will record a list of Telegram usernames which failed to get a match and are thus not included in the CSV output. They will need to be matched manually.\
 3: For cells of the column "Two truths one lie", "Interests", and "Introduction", I have added manipulation of data to:
    - Remove double inverted commas (") as they can screw up the CSV output.
