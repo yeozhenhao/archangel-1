@@ -51,15 +51,20 @@ Please check out his website if you want to learn how it works in Angels & Morta
 ####
 - an important one-line replacement of a deprecated `networkx` command in **arrange.py** so the algorithm works with the latest `networkx==2.6.3`.
 ####
-- **NEW .csv output functions:**\
-1: Output .csv only prints when matching algorithm successfully matches **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of players in the inital .csv input file.\
-2: Also, log file will record a list of Telegram usernames which failed to get a match and are thus not included in the CSV output. They will need to be matched manually.\
+- **NEW .csv output functions:**
+####
+1: Output .csv only prints when matching algorithm successfully matches **>{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}}** of players in the inital .csv input file.
+####
+2: Also, log file will record a list of Telegram usernames which failed to get a match and are thus not included in the CSV output. They will need to be matched manually.
+####
 3: For cells of the column "Two truths one lie", "Interests", and "Introduction", I have added manipulation of data to:
    - Remove double inverted commas (") as they can screw up the CSV output.
    - Enclose cell contents with newline using 2 double inverted commas (" ") so that newlines within the cell contents can be retained.
-4: Now outputs **2 CSVs** for each index (first one is always "0")
+####
+4: Now outputs **2 CSVs** for each index (first index is always "0")
    - 1st CSV (named "**accepted** - 0 - xxxxxxxxx") will show all the accepted players
    - 2nd CSV (named "**rejected** - 0 - xxxxxxxxx") will show all the rejected players
+
 ####
 - **Other minor changes:**\
 1: Changed all of the `print` command formatting to the new-style `print (f'.......')` commands to fix issues running on Python==3.9\
