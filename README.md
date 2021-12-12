@@ -28,7 +28,7 @@ You should close this window again, and there will be a couple more pop-up windo
 you should close again but the bot should export out a *"0 - xxxxxxxxx"* .csv file soon. 
 ####
 ![](botPics/match3.png)\
-***End of a angel.py script that has successfully matched >80% of players in the input playerlist.csv***\
+***End of a angel.py script that has successfully matched >{{MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT}} of players in the input playerlist.csv***\
 After no more pop-up windows are shown & angel.py script has terminated, the terminal 
 should ideally indicate to you that CSV is printed, and also tell you the list of players (technically a *Python dictionary*) 
 that were not matched and thus not in the *"0 - xxxxxxxxx"* .csv output file. You will need to match them manually.
@@ -57,6 +57,9 @@ Please check out his website if you want to learn how it works in Angels & Morta
 3: For cells of the column "Two truths one lie", "Interests", and "Introduction", I have added manipulation of data to:
    - Remove double inverted commas (") as they can screw up the CSV output.
    - Enclose cell contents with newline using 2 double inverted commas (" ") so that newlines within the cell contents can be retained.
+4: Now outputs **2 CSVs** for each index (first one is always "0")
+   - 1st CSV (named "**accepted** - 0 - xxxxxxxxx") will show all the accepted players
+   - 2nd CSV (named "**rejected** - 0 - xxxxxxxxx") will show all the rejected players
 ####
 - **Other minor changes:**\
 1: Changed all of the `print` command formatting to the new-style `print (f'.......')` commands to fix issues running on Python==3.9\
