@@ -92,13 +92,7 @@ Please check out his website if you want to learn how it works in Angels & Morta
 3: Added logging for various functions for easier readability & debugging\
 4: New requirements.txt file with the latest versions of required python modules (tested working as of October 2021)
 
-## What I added
-- **transpose_for_bot.py** script to easily transpose the output .csv data, so they can be easily loaded into my [Angel and Mortals Dual Telegram Bots](https://github.com/yeozhenhao/Angels_Mortals_bot) to start an Angels and Mortals game.\
-Running **transpose_for_bot.py** will re-export the output .csv file with the assigned Angels & Mortals for each player, and then the new .csv can be used as input for my other Python app ***[Telegram Dual Bots for Angels & Mortals](https://github.com/yeozhenhao/Angels_Mortals_bot)***.\
-*Note: This file is not necessary in the running of the Matching algorithm.*
-#### How to use transpose_for_bot.py
-1. Rename output .csv from Matching algorithm as **"1.csv"**, and leave it in the root folder.
-2. Run **transpose_for_bot.py**, and a new "Final Player List.csv" should be created with the assigned Angels & Mortals for each player.
+
 
 ## Overview
 The matching for Angels & Mortals can be done with a Hamiltonian-cycle based approach to finding valid angel-mortal chains based on player's preferences.\
