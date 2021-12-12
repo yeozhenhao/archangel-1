@@ -29,13 +29,14 @@ GENDER_NOPREF = "no preference"
 
 DISPLAY_GRAPH = True
 
-# Changing this value changes how much we care about the houses of players being the same
-# If 1 - we don't care, and house de-conflicting is ignored. 0 means we won't allow any players of the same house to be matched.
+
 MINIMUM_MATCHED_PLAYERS_BEFORE_CSVOUTPUT = 0.8 ##Proportion minimum of total player count in accepted csv before 2 csvs will be outputted (1st accepted players list, 2nd rejected players list
 
 RELAX_GENDERPREF_REQUIREMENT_PERCENTAGE = 0.35
 
 RELAX_NO_SAME_HOUSE_REQUIREMENT_PERCENTAGE = 0.35
+# Changing this value changes how much we care about the houses of players being the same
+# If 1 - we don't care, and house de-conflicting is ignored. 0 means we won't allow any players of the same house to be matched.
 
 RELAX_NO_SAME_CG_REQUIREMENT_PERCENTAGE = 0.00
 
@@ -50,7 +51,7 @@ def get_house_from_player(player):
 
 def get_cg_from_player(player):
     if (player.cgnumber == ""):
-        return str(randint(60,200)) #Nursing has no CGs, thus we do not want to conflict with Medicine CGs 1-60
+        return str(randint(60,8888)) #Nursing has no CGs, thus we do not want to conflict with Medicine CGs 1-60
     else:
         return player.cgnumber
 
