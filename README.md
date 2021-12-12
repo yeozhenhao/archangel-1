@@ -1,6 +1,4 @@
-# Angels & Mortals Matching algorithm for NUS Medicine & Nursing (with yeozhenhao's automatic transposer script)
-## Transposer script & Matching script functions (in photos)
-*I believe that a picture paints a thousand words - yeozhenhao*
+# Angels & Mortals Matching algorithm for NUS Medicine & Nursing
 ####
 ![](botPics/matchinput.png)\
 ***Start with a playerlist.csv. Presumably the data is collected through a form***
